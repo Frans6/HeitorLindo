@@ -60,7 +60,7 @@ O módulo C2f combina características de alto nível com informações contextu
 
 ### Detecção
 
-Por fim, o módulo de detecção utiliza uma combinação de camadas convolucionais e lineares para transformar as características de alta dimensão em caixas delimitadoras e classes de objetos na saída.
+Por fim, o módulo de detecção utiliza uma combinação de camadas convolucionais e lineares para transformar as características de alta dimensão em caixas delimitadoras e classes de objetos na saída. Abaixo, na imagem 1, temos o diagrama apresentando todas as etapas do YOLOv8.
 
 ![Diagrama YOLOv8](diagramaYOLO.jpg)
 
