@@ -44,7 +44,13 @@ O YOLOv8 baseia-se no conceito central do YOLO desenvolvido pela Ultralytics. Em
 
 ## Diagrama YOLOv8
 
-A arquitetura do YOLOv8 incorpora componentes essenciais para realizar a detecção de objetos de forma eficiente.
+A arquitetura do YOLOv8 foi escolhida por utilizar o modelo n, que está sendo utilizada no projeto, conhecido por sua eficiência em termos de velocidade e leveza. Ela incorpora componentes essenciais para realizar a detecção de objetos de forma eficiente. Abaixo, na imagem 1, temos o diagrama apresentando todas as etapas.
+
+![Diagrama YOLOv8](diagramaYOLO.jpg)
+
+<div style="text-align: center;">
+  <b>Diagrama YOLOv8</b> (Fonte: <a href="https://github.com/ultralytics/ultralytics/issues/189">RangeKing</a>)
+</div>
 
 ### Backbone
 
@@ -60,8 +66,4 @@ O módulo C2f combina características de alto nível com informações contextu
 
 ### Detecção
 
-Por fim, o módulo de detecção utiliza uma combinação de camadas convolucionais e lineares para transformar as características de alta dimensão em caixas delimitadoras e classes de objetos na saída. Abaixo, na imagem 1, temos o diagrama apresentando todas as etapas do YOLOv8.
-
-![Diagrama YOLOv8](diagramaYOLO.jpg)
-
-<b>Diagrama YOLOv8</b> (Fonte: [RangeKing](https://github.com/ultralytics/ultralytics/issues/189))
+Por fim, o módulo de detecção utiliza uma combinação de camadas convolucionais e lineares para transformar as características de alta dimensão em caixas delimitadoras e classes de objetos na saída.
