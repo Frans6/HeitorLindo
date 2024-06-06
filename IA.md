@@ -42,3 +42,26 @@ O YOLOv8 baseia-se no conceito central do YOLO desenvolvido pela Ultralytics. Em
    
 5. Pós-Processamento: Uma vez feitas as previsões, um limiar de confiança é aplicado para filtrar as detecções de baixa confiança. A supressão não-máxima é então usada para remover caixas delimitadoras duplicadas ou sobrepostas, garantindo que apenas as previsões mais precisas continuem.
 
+## Diagrama YOLOv8
+
+A arquitetura do YOLOv8 incorpora componentes essenciais para realizar a detecção de objetos de forma eficiente.
+
+### Backbone
+
+O Backbone é composto por uma série de camadas convolucionais que extraem as características mais importantes da imagem de entrada.
+
+### Camada SPPF
+
+A camada SPPF, juntamente com as camadas convolucionais subsequentes, processa as características em diversas escalas. As camadas de Upsample aumentam a resolução dos mapas de características, aprimorando os detalhes.
+
+### Módulo C2f
+
+O módulo C2f combina características de alto nível com informações contextuais, melhorando a precisão e a robustez da detecção.
+
+### Detecção
+
+Por fim, o módulo de detecção utiliza uma combinação de camadas convolucionais e lineares para transformar as características de alta dimensão em caixas delimitadoras e classes de objetos na saída.
+
+![Diagrama YOLOv8](diagramaYOLO.jpg)
+
+<b>Diagrama YOLOv8</b> (Fonte: [RangeKing](https://github.com/ultralytics/ultralytics/issues/189))
