@@ -17,5 +17,5 @@ test:  # test images (optional)
 # Classes
 names:
   0: AZUL
-  1: PRETO
-  2: AMARELO
+  1: AMARELO
+  2: PRETO

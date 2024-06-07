@@ -17,6 +17,9 @@ def main():
     metrics = model.val() 
     # "model.val()" realiza a validação do modelo treinado, retornando métricas que indicam o desempenho do modelo, como precisão, recall, entre outros.
 
+    model.export(format="onnx")
+
+
 # Verifica se o script está sendo executado diretamente (não importado como um módulo)
 if __name__ == '__main__':
     main()
